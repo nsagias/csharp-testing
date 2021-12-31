@@ -17,7 +17,7 @@ namespace RoomBookingApp.Core {
 
             var processor = new RoomBookingRequestProcessor();
 
-            processor.BookRoom(request);
+            RoomBookingResult result = processor.BookRoom(bookingRequest);
         }
     }
 }
