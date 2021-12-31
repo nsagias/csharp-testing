@@ -1,6 +1,7 @@
 ﻿using System;
 using Xunit;
 using Shouldly;
+
 namespace RoomBookingApp.Core {
 
     public class RoomBookingRequestProcessorTest {
