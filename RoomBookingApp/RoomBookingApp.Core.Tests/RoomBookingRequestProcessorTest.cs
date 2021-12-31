@@ -25,7 +25,10 @@ namespace RoomBookingApp.Core {
 
             // Built in assert library
             Assert.NotNull(result);
- 
+            Assert.Equal(bookingRequest.FullName, result.FullName);
+            Assert.Equal(bookingRequest.Email, result.Email);
+            Assert.Equal(bookingRequest.Date, result.Date);
+
 
             // Shoudly library
             result.ShouldNotBeNull();
