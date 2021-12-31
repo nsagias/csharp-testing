@@ -34,7 +34,9 @@ namespace RoomBookingApp.Core {
 
             // Shoudly library
             result.ShouldNotBeNull();
-            
+            result.FullName.ShouldBe(bookingRequest.FullName);
+            result.Email.ShouldBe(bookingRequest.Email);
+            result.Date.ShouldBe(bookingRequest.Date);
 
         }
     }
