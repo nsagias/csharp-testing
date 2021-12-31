@@ -7,7 +7,7 @@ namespace RoomBookingApp.Core {
         [Fact]
         public void Should_Return_Room_Booking_Response_With_Request_Values()
         {
-
+            // Arrange
             var bookingRequest = new RoomBookingRequest()
             {
                 FullName = "Test name",
@@ -17,7 +17,10 @@ namespace RoomBookingApp.Core {
 
             var processor = new RoomBookingRequestProcessor();
 
+            // Act
             RoomBookingResult result = processor.BookRoom(bookingRequest);
+
+            // Assert
         }
     }
 }
