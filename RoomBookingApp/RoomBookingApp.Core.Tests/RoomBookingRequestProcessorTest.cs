@@ -33,7 +33,7 @@ namespace RoomBookingApp.Core {
             Assert.NotEqual("test@test.com", result.Email);
 
 
-            // Shoudly library
+            // Shouldly library
             result.ShouldNotBeNull();
             result.FullName.ShouldBe(bookingRequest.FullName);
             result.Email.ShouldBe(bookingRequest.Email);
@@ -52,8 +52,10 @@ namespace RoomBookingApp.Core {
             // Act
 
             // Assertion library
-            Should.Throw<ArgumentNullException>(() => processor.BookRoom(null));
+            Assert.Throws<ArgumentNullException>(() => processor.BookRoom(null));
 
+            // Shouldly
+            Should.Throw<ArgumentNullException>(() => processor.BookRoom(null));
         }
     }
 }
