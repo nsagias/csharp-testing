@@ -10,8 +10,11 @@ namespace RoomBookingApp.Core
 
         public RoomBookingResult BookRoom(RoomBookingRequest bookingRequest)
         {
-            return new RoomBookingResult
-            {
+            if (bookingRequest == null) {
+                throw new ArgumentNullException(nameof(bookingRequest));
+            }
+
+            return new RoomBookingResult {
                 //throw new NotImplementedException();
                 FullName = bookingRequest.FullName,
                 Email = bookingRequest.Email,

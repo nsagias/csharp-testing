@@ -52,10 +52,15 @@ namespace RoomBookingApp.Core {
             // Act
 
             // Assertion library
-            Assert.Throws<ArgumentNullException>(() => processor.BookRoom(null));
+            //var exception1 = Assert.Throws<ArgumentNullException>(() => processor.BookRoom(null));
+
+           
 
             // Shouldly
-            Should.Throw<ArgumentNullException>(() => processor.BookRoom(null));
+            var exception2 = Should.Throw<ArgumentNullException>(() => processor.BookRoom(null));
+
+            exception2.ParamName.ShouldBe("bookingRequest");
+
         }
     }
 }
