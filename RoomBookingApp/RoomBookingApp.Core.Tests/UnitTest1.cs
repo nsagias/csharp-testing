@@ -12,7 +12,7 @@ namespace RoomBookingApp.Core.Tests
 
             // Act
 
-            // Assert
+            // Assertt
         }
     }
 }
