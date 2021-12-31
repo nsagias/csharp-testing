@@ -5,7 +5,7 @@ namespace RoomBookingApp.Core {
     public class RoomBookingRequestProcessorTest {
 
         [Fact]
-        public void Should_Return_Room_Booking_Request()
+        public void Should_Return_Room_Booking_Response_With_Request_Values()
         {
 
             var bookingRequest = new RoomBookingRequest()
@@ -16,6 +16,8 @@ namespace RoomBookingApp.Core {
             };
 
             var processor = new RoomBookingRequestProcessor();
+
+            processor.BookRoom(request);
         }
     }
 }
