@@ -25,9 +25,11 @@ namespace RoomBookingApp.Core {
 
             // Built in assert library
             Assert.NotNull(result);
+ 
 
             // Shoudly library
             result.ShouldNotBeNull();
+            
 
         }
     }
