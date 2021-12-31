@@ -42,5 +42,10 @@ namespace RoomBookingApp.Core {
             result.Email.ShouldNotBe("test@test.com");
 
         }
+
+        [Fact]
+        public void Should_Through_Error_Message_For_Null_request() {
+
+        }
     }
 }
