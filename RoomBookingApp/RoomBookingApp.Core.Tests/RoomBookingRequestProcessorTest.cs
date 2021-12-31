@@ -1,5 +1,6 @@
 ﻿using System;
 using Xunit;
+using Shouldly;
 namespace RoomBookingApp.Core {
 
     public class RoomBookingRequestProcessorTest {
@@ -21,6 +22,13 @@ namespace RoomBookingApp.Core {
             RoomBookingResult result = processor.BookRoom(bookingRequest);
 
             // Assert
+
+            // Built in assert library
+            Assert.NotNull(result);
+
+            // Shoudly library
+
+
         }
     }
 }
