@@ -2,7 +2,7 @@
 
 namespace RoomBookingApp.Core
 {
-    internal class RoomBookingRequest
+    public class RoomBookingRequest
     {
         public RoomBookingRequest()
         {
