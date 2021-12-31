@@ -46,6 +46,14 @@ namespace RoomBookingApp.Core {
         [Fact]
         public void Should_Through_Error_Message_For_Null_request() {
 
+            // Arrange
+            var processor = new RoomBookingRequestProcessor();
+
+            // Act
+
+            // Assertion library
+            Should.Throw<ArgumentNullException>(() => processor.BookRoom(null));
+
         }
     }
 }
