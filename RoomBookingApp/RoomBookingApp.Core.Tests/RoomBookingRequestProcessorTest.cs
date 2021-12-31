@@ -28,6 +28,8 @@ namespace RoomBookingApp.Core {
             Assert.Equal(bookingRequest.FullName, result.FullName);
             Assert.Equal(bookingRequest.Email, result.Email);
             Assert.Equal(bookingRequest.Date, result.Date);
+            Assert.NotEqual("bingo", result.FullName);
+            Assert.NotEqual("bingo", result.Email);
 
 
             // Shoudly library
